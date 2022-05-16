@@ -16,6 +16,9 @@ db.on('error', error => console.error(error))
 //one time excecute , its connected or not
 db.once('open', () => console.log('Connected to Mongoose.'))
 
+app.set('view-engine', 'ejs')
+
 app.use('/api', articlesRouter)
+app.post('/login', (req, res) => {})
 
 app.listen(PORT, () => console.log(`Server is running on port ${PORT}`))

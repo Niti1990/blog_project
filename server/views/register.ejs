@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/css/uikit.min.css"
+    />
+  </head>
+  <body>
+    <main class="uk-flex uk-flex-center">
+      <article>
+        <h1>Register</h1>
+        <form class="uk-form-stacked" action="/register" method="post">
+          <div class="uk-margin">
+            <label class="uk-form-label" for="name">Name:</label>
+            <div class="uk-form-controls uk-inline">
+              <span class="uk-form-icon" data-uk-icon="icon: user"></span>
+              <input
+                class="uk-input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                autofocus
+                required
+              />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="email">Email:</label>
+            <div class="uk-form-controls uk-inline">
+              <span class="uk-form-icon" data-uk-icon="icon: mail"></span>
+              <input
+                class="uk-input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="password">Password:</label>
+            <div class="uk-form-controls uk-inline">
+              <span class="uk-form-icon" data-uk-icon="icon: lock"></span>
+              <input
+                class="uk-input"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+                required
+              />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <label class="uk-form-label" for="confirmPassword">Confirm Password:</label>
+            <div class="uk-form-controls uk-inline">
+              <span class="uk-form-icon" data-uk-icon="icon: lock"></span>
+              <input
+                class="uk-input"
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </div>
+          <div class="uk-margin">
+            <button class="uk-button uk-button-primary uk-width-expand" type="submit">
+              Register
+            </button>
+          </div>
+        </form>
+        <p>
+          <a class="uk-link-heading" href="/login"
+            >Login<span class="uk-margin-small-left uk-icon" data-uk-icon="arrow-right"></span
+          ></a>
+        </p>
+      </article>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.1/dist/js/uikit-icons.min.js"></script>
+  </body>
+</html>

@@ -3,6 +3,7 @@ import Homepage from './pages/Homepage'
 import SingleView from './pages/SingleView'
 import Header from './components/header'
 import Footer from './components/footer'
+import Login from './pages/Login'
 import ErrorPage from './pages/ErrorPage'
 
 function App() {
@@ -12,8 +13,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/article/:id" element={<SingleView />} />
-        {/* <Route path='/about/' element={<About />} />
-				<Route path='/login/' element={<Login />} /> */}
+        {/* <Route path='/about/' element={<About />} /> */}
+				<Route path='/login/' element={<Login />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
       <Footer />
