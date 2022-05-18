@@ -1,10 +1,10 @@
 import React from 'react'
 
-const Login = () => {
+const Signup = () => {
 	return (
 		<main className='uk-flex-auto uk-section uk-flex uk-flex-row uk-flex-center'>
 			<article className='uk-container uk-container-small'>
-				<h1>Login</h1>
+				<h1>Signup</h1>
 				<form className='uk-form-stacked' action='/login' method='post'>
 					<div className='uk-margin'>
 						<label className='uk-form-label' htmlFor='name'>
@@ -56,18 +56,36 @@ const Login = () => {
 						</div>
 					</div>
 					<div className='uk-margin'>
+						<label className='uk-form-label' htmlFor='passwordConfirmation'>
+							Password Confirmation:
+						</label>
+						<div className='uk-form-controls uk-inline'>
+							<span className='uk-form-icon' data-uk-icon='icon: lock'></span>
+							<input
+								className='uk-input'
+								type='password'
+								id='passwordConfirmation'
+								name='Password Confirmation'
+								placeholder='Password Confirmation'
+								required
+							/>
+						</div>
+					</div>
+					<div className='uk-margin'>
 						<button
 							className='uk-button uk-button-primary uk-width-expand'
 							type='submit'
 						>
-							Login
+							Signup
 						</button>
 					</div>
 				</form>
 				<small>
-					<span className='uk-margin-small-right'>Don't have an account?</span>
-					<a className='uk-link-heading' href='/signup/'>
-						Signup
+					<span className='uk-margin-small-right'>
+						Already have an Account?
+					</span>
+					<a className='uk-link-heading' href='/login/'>
+						Login
 						<span
 							className='uk-margin-small-left uk-icon'
 							data-uk-icon='arrow-right'
@@ -78,5 +96,4 @@ const Login = () => {
 		</main>
 	)
 }
-
-export default Login
+export default Signup
